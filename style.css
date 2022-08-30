@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+body {
+  font-family: Arial;
+  display: grid;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.bg {
+  max-width: 1000px;
+  /* background-color: red; */
+}
+
+.link-header {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.link-header img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.servicos {
+  text-align: center;
+}
+
+.servicos-title {
+  font-size: 1.8em;
+  text-transform: capitalize;
+  color: #3773eb;
+}
+
+.servicos-text {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #9c9c9c;
+}
+
+.links-servicos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.links-servicos a {
+  display: block;
+  width: 330px;
+}
+
+.links-servicos a img {
+  width: 100%;
+}
+
+.portal {
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.portal .portal-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #7a7a7a;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.portal .portal-text {
+  color: #7a7a7a;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.portal-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.portal-box img {
+  width: 500px;
+}
+
+@media (max-width: 800px) {
+  .link-header {
+    width: 800px;
+  }
+
+  .servicos {
+    width: 800px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  body {
+    justify-content: center;
+  }
+
+  .link-header {
+    width: 400px;
+  }
+
+  .servicos {
+    width: 400px;
+  }
+
+  .portal-box img {
+    width: 300px;
+  }
+
+  .portal {
+    padding: 80px; 
+  }
+
+  .portal .portal-text {
+    width: 30ch;
+  }
+}
